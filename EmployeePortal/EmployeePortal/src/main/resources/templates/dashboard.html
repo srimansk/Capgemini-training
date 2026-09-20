@@ -1,0 +1,4 @@
+<!DOCTYPE html><html xmlns:th="http://www.thymeleaf.org"><head><meta charset="UTF-8"><title>Dashboard</title><link rel="stylesheet" th:href="@{/css/style.css}"></head><body>
+<nav><a class="brand" th:href="@{/}">Employee Portal</a><div><a th:href="@{/employees}">Employees</a><a th:href="@{/leaves}">Leaves</a><a th:href="@{/assets}">Assets</a></div></nav>
+<main class="container"><div class="page-head"><div><span class="eyebrow">Overview</span><h1>Dashboard</h1></div></div><section class="stats"><a class="stat" th:href="@{/employees}"><span>Employees</span><strong th:text="${employeeCount}">0</strong><small>View employee records</small></a><a class="stat" th:href="@{/leaves}"><span>Leave Requests</span><strong th:text="${leaveCount}">0</strong><small>Review leave applications</small></a><a class="stat" th:href="@{/assets}"><span>Asset Requests</span><strong th:text="${assetCount}">0</strong><small>Track company assets</small></a></section></main>
+</body></html>

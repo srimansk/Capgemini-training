@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Employee Portal</title><link rel="stylesheet" th:href="@{/css/style.css}"></head>
+<body>
+<nav><a class="brand" th:href="@{/}">Employee Portal</a><div><a th:href="@{/dashboard}">Dashboard</a><a th:href="@{/employees}">Employees</a><a th:href="@{/leaves}">Leaves</a><a th:href="@{/assets}">Assets</a></div></nav>
+<main class="hero">
+  <div><span class="eyebrow">Company workspace</span><h1>Simple employee management, all in one place.</h1><p>Register employees, manage leave requests and track company assets through a clean Spring Boot + Thymeleaf application.</p><div class="actions"><a class="btn primary" th:href="@{/employees}">Manage Employees</a><a class="btn secondary" th:href="@{/dashboard}">Open Dashboard</a></div></div>
+  <div class="hero-card"><div class="mini-card"><b>Employees</b><span>Profiles & records</span></div><div class="mini-card"><b>Leave</b><span>Apply & approve</span></div><div class="mini-card"><b>Assets</b><span>Request & deliver</span></div></div>
+</main>
+</body></html>
